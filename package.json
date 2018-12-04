@@ -1,0 +1,36 @@
+{
+  "name": "hacker-news-pwa",
+  "version": "0.1.3",
+  "private": true,
+  "dependencies": {
+    "firebase": "^5.5.9",
+    "lodash.filter": "^4.6.0",
+    "normalize.css": "^8.0.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.3.0",
+    "timeago.js": "^4.0.0-beta.1"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "react-scripts": "2.0.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "firebase deploy --only hosting",
+    "push": "npm run build && npm run deploy",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
